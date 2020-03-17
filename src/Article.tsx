@@ -15,7 +15,6 @@ export default factory(function Article({ properties, middleware: { data } }) {
 	const { id } = properties();
 	setOptions({ ...getOptions, pageSize: 1, pageNumber: 1, query: { id } });
 	const [article = undefined] = getOrRead(getOptions()) || [];
-	console.log(article);
 	if (!article) {
 		return null;
 	}
