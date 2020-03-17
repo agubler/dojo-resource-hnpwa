@@ -1,0 +1,35 @@
+{
+	"build-app": {
+		"pwa": {
+			"manifest": {
+				"name": "hnpwa-dojo",
+				"short_name": "hn-dojo",
+				"description": "Dojo Hacker News PWA",
+				"background_color": "#ffffff",
+				"theme_color": "#222127",
+				"icons": [
+					{
+						"src": "src/hn.png",
+						"sizes": [
+							128,
+							256,
+							512
+						]
+					}
+				]
+			},
+			"serviceWorker": {
+				"clientsClaim": true,
+				"routes": [
+					{
+						"urlPattern": "https://api.hnpwa.com",
+						"strategy": "networkFirst",
+						"expiration": {
+							"maxEntries": 25
+						}
+					}
+				]
+			}
+		}
+	}
+}

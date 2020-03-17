@@ -1,0 +1,13 @@
+.root {
+	background: white;
+	margin-bottom: 20px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+}
+
+.controls {
+	margin: 5px;
+}

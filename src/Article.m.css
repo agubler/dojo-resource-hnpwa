@@ -1,0 +1,35 @@
+.root {
+	height: 100%;
+	max-width: 800px;
+	margin: auto;
+}
+
+.item {
+	background-color: #fff;
+	padding: 1.8em 2em 1em;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.host,
+.meta {
+	color: #595959;
+}
+
+.title {
+	display: inline;
+	font-size: 1.5em;
+	margin: 0 0.5em 0 0;
+}
+
+.commentsContainer {
+	background-color: #fff;
+	margin-top: 10px;
+	padding: 0 2em 0.5em;
+}
+
+.commentsHeader {
+	margin: 0;
+	font-size: 1.1em;
+	padding: 1em 0;
+	position: relative;
+}

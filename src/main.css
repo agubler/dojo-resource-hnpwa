@@ -1,0 +1,22 @@
+html,
+body {
+	margin: 0;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #2e495e;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
