@@ -9,8 +9,8 @@ import Article from './Article';
 
 const factory = create();
 
+// hack to prevent denial of servicing the API
 const requestCounter = new Map<string, number>();
-
 setInterval(() => {
 	requestCounter.clear();
 }, 1000);
@@ -25,18 +25,16 @@ const articleListResource = createResource({
 		requestCounter.set(key, ++currentRequestCount);
 
 		if (currentRequestCount > 10) {
-			console.log('error due to infinite looping!', offset, size, query);
+			console.log('Error due to infinite looping!', offset, size, query);
 			throw new Error(`Infinite request for key: ${key}`);
 		}
 
 		const response = await fetch(`https://api.hnpwa.com/v0/${categoryQuery.value}/${page}.json`);
 		const data = await response.json();
 
-		console.log('fetching!', offset, size, query, data);
-
 		return {
 			data,
-			total: 90
+			total: 0
 		};
 	}
 });
@@ -55,7 +53,7 @@ const articleResource = createResource({
 
 		return {
 			data: [data],
-			total: 0
+			total: 1
 		};
 	}
 });
