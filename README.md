@@ -1,6 +1,6 @@
 # hnpwa-7.0.0
 
-Deployed Example: https://dist-rh01xcg81.now.sh
+Deployed Example: https://dist-mdtrk6z65.now.sh
 
 This project was generated with the [Dojo CLI](https://github.com/dojo/cli) & [Dojo CLI create app command](https://github.com/dojo/cli-create-app).
 

@@ -34,7 +34,7 @@ const articleListResource = createResource({
 
 		return {
 			data,
-			total: 0
+			total: 300
 		};
 	}
 });
